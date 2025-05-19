@@ -35,8 +35,13 @@ html, body {
   
   font-size: 1.5rem;
   color: #04ed9f;
+    box-shadow:
 
-
+      1px 2px 2px hsla(161, 95%, 41%, 0.2),
+      2px 4px 4px hsla(167, 96%, 39%, 0.2),
+      4px 8px 8px hsla(164, 88%, 52%, 0.2),
+      8px 16px 16px hsla(156, 74%, 48%, 0.2),
+      16px 32px 32px hsla(157, 89%, 32%, 0.2);
 }
 
 #button{
@@ -45,13 +50,7 @@ html, body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  box-shadow:
 
-      1px 2px 2px hsla(161, 95%, 41%, 0.2),
-      2px 4px 4px hsla(167, 96%, 39%, 0.2),
-      4px 8px 8px hsla(164, 88%, 52%, 0.2),
-      8px 16px 16px hsla(156, 74%, 48%, 0.2),
-      16px 32px 32px hsla(157, 89%, 32%, 0.2);
   
 
   
@@ -68,7 +67,7 @@ body {
 }
 
 h1 {
-  margin: 30px;
+  margin: 25px;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #404c5b;
   font-size: 8rem;
@@ -96,7 +95,7 @@ footer {
 
 }
 
-@media (max-width: 824px) {
+@media (max-width: 884px) {
   .container{
     width:100%
   }
@@ -104,11 +103,20 @@ footer {
     font-size: 4rem;
   }
   .btn{
-    height:80px;
-    width: 90px;
+    height:100px;
+    width: 120px;
     font-size: 1rem;
+    position: relative;
+    top: 65px;
   }
 
 
 
+}
+@media (max-width:435px){
+  .btn{
+    height:70px;
+    width: 100px;
+    top: 70px;  
+  }
 }
